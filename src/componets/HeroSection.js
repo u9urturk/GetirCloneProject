@@ -3,7 +3,7 @@ import Slider from 'react-slick'
 
 export default function HeroSection() {
   const settings = {
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -20,8 +20,8 @@ export default function HeroSection() {
           <img className='w-full h-[500px] object-cover' src='https://cdn.getir.com/getirweb-images/common/hero-posters/getir-mainpage-2.jpg'/>
         </div>
       </Slider>
-      <div className='container flex-1 items-center mt-28 absolute top-0 left-1/2 -translate-x-1/2 h-full z-20'>
-            <img src='https://getir.com/_next/static/images/bimutluluk-b3a7fcb14fc9a9c09b60d7dc9b1b8fd6.svg'/>
+      <div className='container flex-none absolute top-0 left-1/2 -translate-x-1/2 h-full z-20'>
+            <img className='mt-20' src='https://getir.com/_next/static/images/bimutluluk-b3a7fcb14fc9a9c09b60d7dc9b1b8fd6.svg'/>
             <h3 className='mt-10 text-4xl font-semibold text-white' >
               Dakikalar içinde <br/>kapınızda<br/>
             </h3>
