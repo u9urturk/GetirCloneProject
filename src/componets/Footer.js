@@ -1,4 +1,6 @@
 import React from 'react'
+import {FaFacebook, FaInstagram, FaTwitter} from 'react-icons/fa'
+import {BiGlobe} from 'react-icons/bi'
 
 export default function Footer() {
   return (
@@ -49,6 +51,29 @@ export default function Footer() {
               <p>Zincir Restoranlar</p>
             </nav>
           </section>
+        </div>
+        <div className='flex justify-between items-center border-t borde-gray-100 mt-6 py-6'>
+          <div className='text-xs text-gray-700 flex  gap-x-8' >
+            &copy; 2022 Getir
+            <a className='text-brand-color hover:underline relative before:w-[3px] before:h-[3px] before:bg-black before:absolute before:-left-4 before:top:1/2 before:translate-y-1.5 before:rounded-full'>
+              Bilgi Toplumu Hizmetleri
+            </a>
+          </div>
+          <nav className='flex gap-x-3'>
+            <a className='h-8 w-8 rounded-lg text-gray-600  transition-all hover:bg-primary-brand-color hover:bg-opacity-5 flex items-center justify-center  cursor-pointer hover:text-brand-color'>
+              <FaFacebook size={21} className="hover:h-20 w-20 transition-all" ></FaFacebook>
+            </a>
+            <a className='h-8 w-8 rounded-lg text-gray-600  transition-all hover:bg-primary-brand-color hover:bg-opacity-5 flex items-center justify-center cursor-pointer hover:text-brand-color'>
+              <FaTwitter size={21} className="hover:h-20 w-20 transition-all"></FaTwitter>
+            </a>
+            <a className='h-8 w-8 rounded-lg text-gray-600  transition-all hover:bg-primary-brand-color hover:bg-opacity-5 flex items-center justify-center cursor-pointer hover:text-brand-color'>
+              <FaInstagram size={21} className="hover:h-20 w-20 transition-all"></FaInstagram>
+            </a>
+            <a className='h-8 flex gap-x-2 rounden text-gray-600  px-2 text-sm border border-gray-100 transition-all hover:bg-primary-brand-color hover:bg-opacity-5  items-center justify-center cursor-pointer hover:text-brand-color '>
+              <BiGlobe size={21} ></BiGlobe>
+              Türkçe (TR)
+            </a>
+          </nav>
         </div>
       </div>
     </div>
