@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function MobileApp() {
   return (
-    <div className='bg-brand-color flex justify-between items-center  bg-mobile-app rounded-xl text-white'>
+    <div className='bg-brand-color flex justify-between items-center  bg-mobile-app md:rounded-xl text-white'>
       <div className='flex flex-col gap-y-3  p-10'>
         <h3 className='text-2x1 font-bold tracking-tight'>Getir'i indirin!</h3>
         <p className='font-semibold'>İstediğiniz ürünleri dakikalar içinde kapınıza getirelim.</p>
@@ -19,8 +19,8 @@ export default function MobileApp() {
         </nav>
       </div>
       <picture>
-        <a  >
-          <img className='pt-12' src='https://cdn.getir.com/getirweb-images/common/landing/phoneLanding.png'></img>
+        <a className='hidden md:block'  >
+          <img className=' pt-12' src='https://cdn.getir.com/getirweb-images/common/landing/phoneLanding.png'></img>
         </a>
       </picture>
     </div>

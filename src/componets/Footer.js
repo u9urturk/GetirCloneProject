@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <div className='bg-white'>
       <div className='container mx-auto'>
-        <div className='grid grid-cols-4 pt-10'>
+        <div className='grid md:grid-cols-4 pt-10  gap-y-4 px-6 md:gap-y-0 md:px-0' >
           <section>
             <nav className='grid gap-y-4'>
               <h6 className='text-lg text-brand-color'>Getir'i indirin! </h6>
@@ -21,7 +21,7 @@ export default function Footer() {
               </a>
             </nav>
           </section>
-          <section >
+          <section>
             <nav className='grid gap-y-4 text-sm'>
               <h6 className='text-lg text-brand-color'>Getir'i keşfedin </h6>
               <p>Hakkımızda</p>
@@ -52,13 +52,14 @@ export default function Footer() {
             </nav>
           </section>
         </div>
-        <div className='flex justify-between items-center border-t borde-gray-100 mt-6 py-6'>
+        <div className='flex flex-col md:flex-row md:justify-between items-center border-t border-gray-100 mt-6 py-6'>
           <div className='text-xs text-gray-700 flex  gap-x-8' >
             &copy; 2022 Getir
             <a className='text-brand-color hover:underline relative before:w-[3px] before:h-[3px] before:bg-black before:absolute before:-left-4 before:top:1/2 before:translate-y-1.5 before:rounded-full'>
               Bilgi Toplumu Hizmetleri
             </a>
           </div>
+
           <nav className='flex gap-x-3'>
             <a className='h-8 w-8 rounded-lg text-gray-600  transition-all hover:bg-primary-brand-color hover:bg-opacity-5 flex items-center justify-center  cursor-pointer hover:text-brand-color'>
               <FaFacebook size={21} className="hover:h-20 w-20 transition-all" ></FaFacebook>
