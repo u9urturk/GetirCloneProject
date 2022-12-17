@@ -3,7 +3,6 @@ import Slider from 'react-slick'
 import Banners from '../api/banners.json'
 import Title from './ui/Title';
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io"
-import { useWindowWidth } from '@react-hook/window-size';
 
 function SampleNextArrow(props) {
   const { onClick } = props;
